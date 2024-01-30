@@ -1,0 +1,23 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "Weather App",
+  "scripts": {
+    "start": "parcel ./index.html",
+    "build": "parcel build ./index.html --dist-dir ./dist"
+  },
+  "author": "Nessim Yohros",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-semistandard": "^17.0.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "parcel": "^2.11.0"
+  },
+  "dependencies": {
+    "unix-timestamp": "^1.0.4"
+  }
+}

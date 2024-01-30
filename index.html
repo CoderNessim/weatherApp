@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="src/controller.js"></script>
+    <link rel="stylesheet" href="src/styles/styles.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./src/styles/imgs/DALL·E-2024-01-11-23.39.ico"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>WeatherApp</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <div class="header-content">
+          <span class="city-name">New York</span>
+          <span class="temp">35º Celsius</span>
+          <form class="city-form">
+            <input
+              class="city-input"
+              type="text"
+              id="city-input"
+              name="city"
+              placeholder="Enter a city"
+            />
+            <button class="submit-button" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="sub-info">
+        <div class="sub-info-1">
+          <header class="title-sub-info">Wind and Clouds</header>
+          <ul class="list">
+            <li class="list-info" data-cloud-coverage="cloudCoverage">
+              Cloud Coverage:
+              <span class="dynamic-content"></span>
+            </li>
+            <li class="list-info" data-wind-speed="windSpeed">
+              Wind Speed:
+              <span class="dynamic-content"></span>
+            </li>
+            <li class="list-info" data-pressure="pressure">
+              Pressure:
+              <span class="dynamic-content"></span>
+            </li>
+            <li class="list-info" data-air-quality-index="airQualityIndex">
+              Air Quality:
+              <span class="dynamic-content"></span>
+            </li>
+            <li class="list-info" data-wind-direction="windDirection">
+              Wind Direction:
+              <span class="dynamic-content"></span>
+            </li>
+          </ul>
+        </div>
+        <div class="sub-info-2">
+          <header class="title-sub-info">Other</header>
+          <ul class="list">
+            <li class="list-info" data-temp-feels-like="tempFeelsLike">
+              Feels Like:
+              <span class="dynamic-content"></span>
+            </li>
+            <li class="list-info" data-uv-index="uvIndex">
+              UV Index:
+              <span class="dynamic-content"></span>
+            </li>
+            <li class="list-info" data-visibility="visibility">
+              Visibility:
+              <span class="dynamic-content"></span>
+            </li>
+            <li class="list-info" data-dew-point="dewPoint">
+              Dew Point:
+              <span class="dynamic-content"></span>
+            </li>
+            <li
+              class="list-info"
+              data-last-observation-time="lastObservationTime"
+            >
+              Observation Time: 
+              <span class="dynamic-content"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
